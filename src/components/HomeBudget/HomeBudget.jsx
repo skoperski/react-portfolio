@@ -294,7 +294,7 @@ export const HomeBudget = () => {
           <header>
             <h1 className="text--center budget__h1">Home budget</h1>
             <div className="app__logo">
-              <img src="/src/assets/budget.png" alt="Budget" />
+              <img src="/public/budget.png" alt="Budget" />
             </div>
             <div
               id="budgetState"

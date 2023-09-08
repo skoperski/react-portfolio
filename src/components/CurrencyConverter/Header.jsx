@@ -3,7 +3,7 @@ export const Header = () => {
     <header className="wrapper">
       <div className="app__header">
         <div className="app__logo">
-          <img src="/src/assets/budget.png" />
+          <img src="/public/budget.png" />
         </div>
         <div className="header__content">
           <p>Currency Converter</p>
