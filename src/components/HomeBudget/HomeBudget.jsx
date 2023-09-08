@@ -25,11 +25,13 @@ export const HomeBudget = () => {
           <>
             <div className="item">
               <input
+                className="budget__edit__input"
                 type="text"
                 value={item.editName}
                 onChange={(e) => setEditedIncomeName(item.id, e.target.value)}
               />
               <input
+                className="budget__edit__input"
                 type="number"
                 value={item.editAmount}
                 onChange={(e) => setEditedIncomeAmount(item.id, e.target.value)}
@@ -77,11 +79,13 @@ export const HomeBudget = () => {
           <>
             <div className="item">
               <input
+                className="budget__edit__input"
                 type="text"
                 value={item.editName}
                 onChange={(e) => setEditedExpenseName(item.id, e.target.value)}
               />
               <input
+                className="budget__edit__input"
                 type="number"
                 value={item.editAmount}
                 onChange={(e) =>
@@ -312,7 +316,7 @@ export const HomeBudget = () => {
                 <input
                   type="text"
                   id="incomeTitle"
-                  className="budget__list__form__input budget__list__form__input--text"
+                  className="budget__list__form__input budget__list__form__input--text budget__input"
                   placeholder="name"
                   value={incomeTitle}
                   onChange={(e) => setIncomeTitle(e.target.value)}
@@ -320,7 +324,7 @@ export const HomeBudget = () => {
                 <input
                   type="number"
                   id="incomeValue"
-                  className="budget__list__form__input budget__list__form__input--number"
+                  className="budget__list__form__input budget__list__form__input--number budget__input"
                   placeholder="value"
                   value={incomeValue}
                   onChange={(e) => setIncomeValue(e.target.value)}
@@ -357,7 +361,7 @@ export const HomeBudget = () => {
                 <input
                   type="text"
                   id="expenseTitle"
-                  className="budget__list__form__input budget__list__form__input--text"
+                  className="budget__list__form__input budget__list__form__input--text budget__input"
                   placeholder="name"
                   value={expenseTitle}
                   onChange={(e) => setExpenseTitle(e.target.value)}
@@ -365,7 +369,7 @@ export const HomeBudget = () => {
                 <input
                   type="number"
                   id="expenseValue"
-                  className="budget__list__form__input budget__list__form__input--number"
+                  className="budget__list__form__input budget__list__form__input--number budget__input"
                   placeholder="value"
                   value={expenseValue}
                   onChange={(e) => setExpenseValue(e.target.value)}

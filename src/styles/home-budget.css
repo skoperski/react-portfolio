@@ -1,5 +1,9 @@
-input {
+.budget__input {
   margin: 5px 0;
+}
+
+.budget__edit__input {
+  max-width: 140px;
 }
 
 .budget__background {
