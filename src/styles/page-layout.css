@@ -29,6 +29,8 @@ body {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  pointer-events: none;
+  /* cursor: not-allowed; */
 }
 
 .nav-links {

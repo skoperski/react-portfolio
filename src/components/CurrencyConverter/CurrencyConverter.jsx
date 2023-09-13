@@ -5,10 +5,12 @@ import "../../styles/currency-converter.css";
 export const CurrencyConverter = () => {
   return (
     <>
-      <Header />
-      <section className="converter__wrapper" id="section">
-        <Currencies />
-      </section>
+      <div className="converter-body">
+        <Header />
+        <section className="converter__wrapper" id="section">
+          <Currencies />
+        </section>
+      </div>
     </>
   );
 };

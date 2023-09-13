@@ -9,14 +9,16 @@ import { HomeBudget } from "./HomeBudget/HomeBudget";
 function App() {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/homebudget" element={<HomeBudget />} />
-        <Route path="/currencyconverter" element={<CurrencyConverter />} />
-        <Route path="/pagelayout" element={<PageLayout />} />
-        <Route path="/testingthings" element={<TestingThings />} />
-      </Routes>
+      <div className="main__body">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/homebudget" element={<HomeBudget />} />
+          <Route path="/currencyconverter" element={<CurrencyConverter />} />
+          <Route path="/pagelayout" element={<PageLayout />} />
+          <Route path="/testingthings" element={<TestingThings />} />
+        </Routes>
+      </div>
     </>
   );
 }

@@ -1,0 +1,96 @@
+.home-body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-header {
+  color: white;
+  display: flex;
+  padding: 100px 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.home-main {
+  display: flex;
+  gap: 100px;
+}
+
+.home-main-border {
+  appearance: none;
+  border: none;
+  background: none;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  padding: 30px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.home-main-border::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 40px;
+  height: 40px;
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+  transition: width 0.3s, height 0.3s;
+}
+
+.home-main-border::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 40px;
+  height: 40px;
+  border-bottom: 4px solid white;
+  border-right: 4px solid white;
+  transition: width 0.3s, height 0.3s;
+}
+
+.home-main-border:hover::before,
+.home-main-border:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.first-section p {
+  text-align: end;
+}
+
+/* .home-item {
+  color: white;
+}
+
+.home-item:hover {
+  color: rgb(170, 170, 170);
+  transition-duration: 0.3s;
+} */

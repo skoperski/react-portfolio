@@ -4,7 +4,7 @@ import "../styles/navbar.css";
 export const Navbar = () => {
   return (
     <nav className="main-nav-bar">
-      <Link to="/" className="router-link">
+      <Link to="/" className="router-link main-nav-home">
         Home
       </Link>
       <ul className="main-nav-links">
