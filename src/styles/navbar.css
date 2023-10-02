@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   background-color: rgb(85, 85, 85);
-  /* height: 50px; */
   align-items: center;
   padding: 20px;
   font-size: 24px;
@@ -22,6 +21,15 @@
 .router-link {
   text-decoration: none;
   color: white;
+  transition-duration: 0.3s;
+}
+
+@media screen and (min-width: 1100px) {
+  .router-link:hover {
+    /* transform: scale(1.05); */
+    color: rgb(170, 170, 170);
+    transition-duration: 0.3s;
+  }
 }
 
 @media screen and (max-width: 630px) {
